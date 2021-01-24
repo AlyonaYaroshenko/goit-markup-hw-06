@@ -920,10 +920,10 @@ textarea {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form-field.checkbox {
-  display: flex;
+.form-field.checkbox-line {
   text-align: center;
-  margin: 20px 0px 30px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .submit-button {
@@ -935,10 +935,7 @@ textarea {
   padding: 10px 55px;
   border: none;
   border-radius: 4px;
-
   font: inherit;
-  cursor: pointer;
-
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -948,4 +945,5 @@ textarea {
   color: var(--white-color);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
