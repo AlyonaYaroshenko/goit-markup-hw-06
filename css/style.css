@@ -591,9 +591,6 @@ textarea {
 
 /* footer subscription field */
 
-.form-field-footer {
-}
-
 .subscribe {
   /* display: inline-block;
   display: flex; */
@@ -863,6 +860,8 @@ textarea {
 
 .modal-close {
   fill: currentColor;
+  transition-property: color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-button:hover,
@@ -898,6 +897,8 @@ textarea {
 
 .form-field input {
   height: 40px;
+  width: 100%;
+  padding-left: 30px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
@@ -907,6 +908,7 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  padding: 12px 0px 0px 15px;
 }
 
 .form-field textarea::placeholder {
@@ -916,7 +918,6 @@ textarea {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.01em;
-  padding: 12px 0px 0px 15px;
   color: rgba(117, 117, 117, 0.5);
 }
 
@@ -924,6 +925,37 @@ textarea {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 30px;
+}
+
+.input-field {
+  position: relative;
+}
+
+.name-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--title-color);
+  transition-property: fill;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input {
+  transition-property: border-color, outline;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input:hover,
+.modal-input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  cursor: pointer;
+}
+
+.modal-input:hover + .name-icon,
+.modal-input:focus + .name-icon {
+  fill: var(--accent-color);
 }
 
 .submit-button {
