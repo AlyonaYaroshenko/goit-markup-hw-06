@@ -616,16 +616,11 @@ textarea {
   outline: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-}
-
-.form-button-footer input {
   background-color: var(--footer-background-color);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
+  color: rgba(255, 255, 255, 0.6);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  padding-left: 16px;
 }
 
 .form-button-footer input::placeholder {
@@ -634,7 +629,7 @@ textarea {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  padding-left: 16px;
+  /* padding-left: 16px; */
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
