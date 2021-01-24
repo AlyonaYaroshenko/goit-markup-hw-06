@@ -44,6 +44,10 @@ img {
   height: auto;
 }
 
+textarea {
+  resize: none;
+}
+
 .container {
   width: 1200px;
   margin-left: auto;
@@ -783,7 +787,6 @@ img {
 .modal-title {
   margin-top: 40px;
   margin-bottom: 12px;
-  font-family: Roboto;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -791,7 +794,73 @@ img {
   color: var(--title-color);
 }
 
-.form {
-  /* display: block;
-  margin: 40px 0px; */
+/* form field */
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 40px 10px;
+}
+
+.form-field label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--main-text-color);
+}
+
+.form-field input {
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.form-field textarea {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.form-field textarea::placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  padding: 12px 0px 0px 15px;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form-field.checkbox {
+  display: flex;
+  text-align: center;
+  margin: 20px 0px 30px;
+}
+
+.submit-button {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  padding: 10px 55px;
+  border: none;
+  border-radius: 4px;
+
+  font: inherit;
+  cursor: pointer;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
