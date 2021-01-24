@@ -476,7 +476,6 @@ textarea {
 .footer-blocks {
   display: flex;
   align-items: flex-start;
-  padding-right: 0px;
 }
 
 .footer {
@@ -509,9 +508,13 @@ textarea {
   margin-right: 0;
 }
 
+.footer-list {
+  padding: 0px 0px 0px 0px;
+}
+
 .adress-footer {
   margin: 20px 0px 9px 0px;
-  padding: 0px;
+  padding-right: 15px;
 }
 
 .adress-footer,
@@ -538,7 +541,7 @@ textarea {
 
 .footer-join {
   display: inline-block;
-  margin: 0px 0px 0px 70px;
+  margin: 0px 0px 0px 67px;
 }
 
 .join {
@@ -611,7 +614,7 @@ textarea {
 }
 
 .form-button-footer input {
-  width: 358px;
+  width: 360px;
   height: 50px;
   outline: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -636,23 +639,32 @@ textarea {
   letter-spacing: 0.03em;
   padding-left: 16px;
   letter-spacing: 0.03em;
-
   color: rgba(255, 255, 255, 0.6);
 }
 
 .submit-button-footer {
   margin-left: 12px;
-  padding: 10px 29px;
+  padding: 10px 28px 10px 29px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
   background-color: var(--accent-color);
+
   font-weight: 700;
-  font-size: 1.87;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--white-color);
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-subscribe-icon {
+  fill: var(--white-color);
+  margin-left: 10px;
+  padding: 0;
 }
 
 /* portfolio page */
