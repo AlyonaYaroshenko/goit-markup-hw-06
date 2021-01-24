@@ -267,6 +267,25 @@
     <button class="modal-button" data-modal-close><svg class="modal-close" width="11" height="11">
       <use href="./images/icons.svg#icon-close"></use>
     </svg></button>
+    <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+    <form name="signup_form" autocomplete="on" novalidate>
+      <label for="user_name">Имя</label>
+      <input type="name" name="user_name" id="user_name" />
+
+      <label for="user-phone">Телефон</label>
+      <input type="tel" name="user_phone" id="user-phone" />
+
+      <label for="user_email">Email</label>
+      <input type="email" name="user_email" id="user_email" />
+
+      <labet for="feedback">Комментарий</labet>
+      <textarea name"feedback" rows="8"placeholder="Введите текст"></textarea>
+    
+      <label><input type="checkbox"/>Соглашаюсь с рассылкой и принимаю Условия договора</label>
+      
+      <button type="submit">Отправить</button>
+    
+    </form>
   </div>
 </div>
 <script src="./js/modal.js"></script>
