@@ -947,12 +947,19 @@ textarea {
 .modal-input:focus + .name-icon {
   fill: var(--accent-color);
 }
+
 .policy-line {
-  position: relative;
   margin-top: 20px;
   margin-bottom: 30px;
-  margin-left: 76px;
   padding: 0px;
+}
+.policy-label {
+  display: flex;
+  justify-content: center;
+}
+
+.old-checkbox {
+  margin-right: 9px;
 }
 
 .policy-link {
@@ -960,45 +967,25 @@ textarea {
   border-bottom: 1px solid var(--accent-color);
 }
 
-.policy-text {
-  /* text-align: center; */
-  padding: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--main-text-color);
-}
-
 .checkbox {
-  position: absolute;
   width: 16px;
   height: 15px;
   border: 2px solid var(--title-color);
   border-radius: 3px;
-  top: 50%;
-  left: -20px;
-  transform: translateY(-50%);
-}
-
-.check-icon {
-  position: absolute;
-  top: 50%;
-  left: -20px;
-  transform: translateY(-50%);
-  border-radius: 3px;
-  transition-property: fill, background-color;
+  margin-right: 9px;
+  transition-property: fill, background-color, border-color;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.check-icon {
-  fill: transparent;
-}
-
-.old-checkbox:checked ~ .check-icon {
+.old-checkbox:checked ~ .checkbox {
+  background-image: url("../images/icon-check.svg");
+  background-size: contain;
   fill: var(--white-color);
   background-color: var(--accent-color);
+  background-origin: border-box;
+  border-color: var(--accent-color);
 }
 
 .submit-button {
