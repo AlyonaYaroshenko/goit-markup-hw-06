@@ -308,12 +308,16 @@
 
       <div class="form-field">
         <label for="comment">Комментарий</label>
-        <textarea type="comment" name="comment" id="comment" rows="7" class="modal-input" placeholder="Введите текст"></textarea>
+        <textarea type="comment" name="comment" id="comment" rows="6" class="modal-input" placeholder="Введите текст"></textarea>
       </div>
 
-      <div class="form-field checkbox-line">
-        <label for="policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
-        <input class="checkbox" type="checkbox" name="policy" id="policy" />
+      <div class="policy-line">
+        <label>
+          <input type="checkbox" name="policy" class="old-checkbox visually-hidden" />
+          <div class="policy-text">Соглашаюсь с рассылкой и принимаю <a class="policy-link" href="">Условия договора</a></div>
+          <div class="checkbox"></div>
+          <svg class="check-icon" width="16" height="15"><use href="./images/icons.svg#icon-icon-check"></use></svg>
+        </label>
       </div>
 
       <button class="submit-button" type="submit">Отправить</button>
